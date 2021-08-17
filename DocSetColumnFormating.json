@@ -1,0 +1,33 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+    "elmType": "button",
+    "customRowAction": {
+      "action": "editProps"
+    },
+    "attributes": {
+      "class": "ms-fontColor-white ms-fontColor-black--hover"
+    },
+    "style": {
+      "border": "none",
+      "cursor": "pointer",
+      "background-color": "transparent",
+      "visibility": "=if(((indexOf([$ContentTypeId],'0x0120')) == 0),'visiable','hidden'"
+    },
+    "children": [
+      {
+        "elmType": "span",
+        "attributes": {
+          "iconName": "Edit",
+          "class": "ms-bgColor-themeDark ms-bgColor-themeDark--hover ms-fontColor-white ms-fontColor-black--hover"
+        },
+        "txtContent": " Open Details",
+        "style": {
+          "font-size": "13px",
+          "border": "1px solid black",
+          "border-radius": "7px",
+          "padding": "3px 5px 3px 5px",
+          "font-weight": "bold"
+        }
+      }
+    ]
+  }
